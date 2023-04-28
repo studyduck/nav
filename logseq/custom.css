@@ -1,0 +1,27 @@
+/* 
+.ls-block {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  margin-top: -1px;
+  margin-bottom: -1px;
+
+  border-bottom: none;
+}
+*/
+
+
+.ls-block .bullet {
+  display: inline-block !important;
+  background-color: var(--ls-block-bullet-color, #394b59) !important;
+}
+.ls-block .bullet-container:empty::after {
+  content: "";
+  display: block;
+
+  background-color: var(--ls-block-bullet-color, #394b59) !important;
+  border-radius: 50%;
+  height: 6px;
+  transition: transform 0.2s;
+  width: 6px;
+}
